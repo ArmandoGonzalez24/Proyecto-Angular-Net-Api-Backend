@@ -42,7 +42,7 @@ namespace ProductCategoryCrud.Controllers
 
         // POST: api/Categories
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        // [Authorize(Roles = "Admin")]
         public async Task<ActionResult<Category>> PostCategory(Category category)
         {
             _context.Categories.Add(category);
